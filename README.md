@@ -2,7 +2,6 @@ AUTH_MICROSERVICE_README.md
 # Auth Microservice – Communication Contract & Integration Guide
 
 This document defines the **fixed communication contract** between the Auth Microservice and any teammates' projects.  
-**Once defined, this contract MUST NOT change**, so that all dependent projects continue functioning reliably.
 
 ---
 
