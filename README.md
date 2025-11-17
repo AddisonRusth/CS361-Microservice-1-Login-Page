@@ -19,7 +19,9 @@ npm run dev
 You should see:
 
 Auth service listening on https://localhost:5047
-⚠️ If you don't see that line, the service is not running correctly. 3. Create at least one user From any terminal (while the service is running):
+⚠️ If you don't see that line, the service is not running correctly. 
+
+3. Create at least one user From any terminal (while the service is running):
 
 curl -k -X POST https://localhost:5047/auth/register \
 -H "Content-Type: application/json" \
@@ -30,7 +32,9 @@ Email: test@example.org Password: password123
 
 Note: Your app can also call this endpoint to let real users sign up.
 
-What your webapp needs to do (frontend) Your frontend framework doesn't matter (React, plain HTML/JS, Vue, etc.). Follow these three steps: 4.1 Add a login form Create a form with:
+What your webapp needs to do (frontend) Your frontend framework doesn't matter (React, plain HTML/JS, Vue, etc.). Follow these three steps: 
+
+4.1 Add a login form Create a form with:
 Email input field Password input field Login button
 
 4.2 On login submit, call the microservice When the user clicks Login or submits the form, send a POST request:
