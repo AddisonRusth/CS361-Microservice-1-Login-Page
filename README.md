@@ -48,7 +48,7 @@ json
   "error": "Error message here"
 }
 ```
-###CORS Policy
+### CORS Policy
 Only local development origins are allowed:
 ```
 http://localhost:<any_port>
