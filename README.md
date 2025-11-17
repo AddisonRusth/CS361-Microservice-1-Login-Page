@@ -1,5 +1,9 @@
-Auth Service Integration Guide
-What this microservice does The auth microservice runs as a separate server at: https://localhost:5047\ It exposes a REST API with the following endpoints:
+Auth Service Integration Guide:
+
+What this microservice does:
+The auth microservice runs as a separate server at: https://localhost:5047\ 
+
+It exposes a REST API with the following endpoints:
 POST /auth/register – Create users POST /auth/login – Log in, returns tokens POST /auth/refresh – Refresh access token GET /auth/me – Check who is logged in
 
 Important: Your project only needs to call these endpoints; you don't need to modify its internal code. 2. Start the auth microservice Navigate to the auth-service folder and follow these steps: Install dependencies
