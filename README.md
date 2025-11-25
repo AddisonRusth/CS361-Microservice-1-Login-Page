@@ -96,59 +96,10 @@ Expected successful response:
 ```
 
 ## 4 UML Sequence Diagram (Requesting & Receiving Data)
-                      +-----------------+
-                      |  Web Application |
-                      +--------+--------+
-                               |
-                               | 1. User submits login form
-                               |
-                               v
-                     +---------+-----------+
-                     |  Auth Microservice  |
-                     +---------+-----------+
-                               |
-                               | 2. POST /auth/login
-                               |    { email, password }
-                               |
-                               v
-                     +---------+-----------+
-                     |  Auth Controller    |
-                     +---------+-----------+
-                               |
-                               | 3. Validate JSON body
-                               |
-                               v
-                     +---------+-----------+
-                     |   User Database     |
-                     +---------+-----------+
-                               |
-                               | 4. Check hashed password
-                               |
-                               v
-                     +---------+-----------+
-                     |   Token Generator   |
-                     +---------+-----------+
-                               |
-                               | 5. Create access + refresh tokens
-                               |
-                               v
-                     +---------+-----------+
-                     |  Auth Microservice  |
-                     +---------+-----------+
-                               |
-                               | 6. Return JSON response:
-                               |    { access_token, refresh_token }
-                               |
-                               v
-                      +--------+--------+
-                      | Web Application |
-                      +-----------------+
-                               |
-                               | 7. App stores tokens
-                               |    localStorage / session / etc.
-                               |
-                               v
-                         (User logged in)
+
+
+<img width="1826" height="756" alt="Screenshot 2025-11-24 224215" src="https://github.com/user-attachments/assets/9c6c0111-e5e9-49c1-9fd8-2a17552caf40" />
+
 
 ## 5. Summary for Teammates
 
@@ -156,7 +107,7 @@ To integrate this microservice:
 
 Send REST requests to https://localhost:5047
 
-Use JSON for all requests
+Use JSON for all requests<
 
 Parse JSON responses
 
